@@ -15,6 +15,4 @@ define createfile::file (
     owner   => $owner
   }
 
-  create_resources('createfile::file', $create_file)
-
 }

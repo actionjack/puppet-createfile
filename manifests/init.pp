@@ -35,4 +35,9 @@
 #
 # Copyright 2014 Your name here, unless otherwise noted.
 #
-class createfile { }
+class createfile ( $file_hash = {} ) {
+
+  validate_hash ($file_hash)
+  create_resources('createfile::file', $file_hash)
+
+}
